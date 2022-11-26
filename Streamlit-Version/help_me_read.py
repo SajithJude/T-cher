@@ -52,7 +52,7 @@ def get_questions(text):
         st.text(res['answer']) 
 
 def main():
-    st.title('HelpMeRead')
+    st.title('T-cher')
     message = st.text_area("Enter Text: ")
     option = st.selectbox("Select language: ", ('German', 'French', 'Romanian'))
     Translate = st.button("Translate")
