@@ -2,7 +2,7 @@ import torch
 import streamlit as st
 from transformers import AutoTokenizer, AutoModel, AutoModelForSeq2SeqLM
 import pipelines
-
+# from pipelines import QGPipeline, MultiTaskQAQGPipeline,E2EQGPipeline
 device = torch.device('cpu')
 tokenizer = None
 model = None
@@ -13,7 +13,7 @@ def load_models():
      global tokenizer, model, question_generator
      tokenizer = AutoTokenizer.from_pretrained("t5-small")
      model = AutoModelForSeq2SeqLM.from_pretrained("t5-small").to(device)
-     question_generator = pipelines("question-generation")
+     question_generator = pipelines.pipeline("question-generation")
 
 # summarize text
 def get_summary(text):
