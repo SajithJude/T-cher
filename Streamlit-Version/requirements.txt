@@ -1,5 +1,6 @@
 torch
 transformers
 streamlit
+sentencepiece
 nltk
 # git+https://github.com/patil-suraj/question_generation#egg=question_generation
