@@ -1,4 +1,4 @@
 torch
 transformers
 streamlit
-git+git://github.com/patil-suraj/question_generation
+git+https://github.com/patil-suraj/question_generation
